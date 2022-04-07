@@ -13,11 +13,11 @@ public class text : MonoBehaviour
 
         if (!isRightScript)
         {
-            pos = new Vector3(2, 0.51f, 3);
+            pos = new Vector3(3f, 0.51f, 3);
         }
         else if (isRightScript)
         {
-            pos = new Vector3(-2f, 0.51f, 3);
+            pos = new Vector3(-3f, 0.51f, 3);
         }
 
         transform.position = pos;

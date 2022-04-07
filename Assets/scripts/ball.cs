@@ -20,8 +20,8 @@ public class ball : MonoBehaviour
 
     public void ReturnToCenter()
     {
-        int velX = Random.Range(1, 3) == 1 ? Random.Range(-4, -7) : Random.Range(4, 7);
-        int velZ = Random.Range(1, 3) == 1 ? Random.Range(-4, -7) : Random.Range(4, 7);
+        int velX = Random.Range(1, 3) == 1 ? Random.Range(-6, -12) : Random.Range(-6, -12);
+        int velZ = Random.Range(1, 3) == 1 ? Random.Range(-6, -12) : Random.Range(-6, -12);
         rb.velocity = new Vector3(velX * speed, 0, velZ * speed);
         transform.position = new Vector3(0, 1, 0);
     }

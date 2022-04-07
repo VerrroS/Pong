@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
-using UnityRawInput;
+
 
 public class paddle : MonoBehaviour
 
@@ -24,8 +24,6 @@ public class paddle : MonoBehaviour
         osc.SetAddressHandler("/sensor/two", set_player2);
         
         height = transform.localScale.y;
-        var workInBackground = true;
-        RawKeyInput.Start(workInBackground);
     }
 
 
@@ -67,29 +65,7 @@ public class paddle : MonoBehaviour
         }
         else
         {
-            if (!isRight)
-            {
-                if (RawKeyInput.IsKeyDown(RawKey.W)){
-                    x = 1;
-                }
-                else if (RawKeyInput.IsKeyDown(RawKey.S)){
-                    x = -1;
-                }
-                else{
-                    x = 0;
-                }
-            if (isRight){
-                if (RawKeyInput.IsKeyDown(RawKey.Up)){
-                    x = 1;
-                }
-                else if (RawKeyInput.IsKeyDown(RawKey.Down)){
-                    x = -1;
-                }
-                else{
-                    x = 0;
-                }
-            }
-            }
+
             move = Input.GetAxis(input) * Time.deltaTime * speed;
 
         }
