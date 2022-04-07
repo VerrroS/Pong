@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8ac7396aa466dc344aa01ba3c4d1a51a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - ball: {fileID: 4542989266965152216, guid: 0e66a0d1a2599ed4281d39651079fd46, type: 3}
+  - paddle: {fileID: 3501187537324640208, guid: c273a73a23691f044a05fb761fd6e183, type: 3}
+  - bound: {fileID: 3069466680240393407, guid: c10b73eb972f2b14d92b779c8f0fce63, type: 3}
+  - text: {fileID: 8012268012928561221, guid: a7d0876eea5717848bc51e4e69a85517, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
